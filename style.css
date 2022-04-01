@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,100;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", "Poppins",sans-serif;
+}
+
+/*VARIAVEIS LIGTH MODE*/
+:root{
+    --body-bg: #FFFBFB;
+    --p-color:#494444;
+    --clip-path: #E2DADA;
+    --line-color:#BD98DA;
+    --input-color: #9D6AC5;
+    --btm-color:#9D6AC5;
+    --sub-color:#E5E5E5;
+    --border-color:#9D6AC5;
+    --back-padd:#f1eeee;
+    --label-color:#BD98DA;
+}
+
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    background: var(--body-bg);
+    display: flex; /*ajudou a dimencionar a imagem*/
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+section{
+    width: 50vw;
+    padding: 4rem;
+}
+
+section span{
+    font-size: 44px;
+    font-family: "Poppins";
+    font-weight: 400;
+    padding: 2rem;
+    color: var(--p-color);
+    position: relative;
+}
+
+section span::before{
+    position: absolute;
+    height: 3px;
+    width: 90%;
+    content:'';
+    background: var(--line-color);
+    top: 90px;
+}
+
+.alternative{
+    padding: 1.5rem;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 3.5px;
+}
+
+.alternative img{
+    width: 95%;
+    height: 95%;
+}
+
+.alternative .clip{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--clip-path);
+    top: 0;
+    right: 0;
+    clip-path: circle(45% at left 100%);
+    z-index: -1;
+}
+
+main{
+    width: 50vw;
+    padding: 6rem;
+    position: relative;
+}
+
+form.form2{
+    display: flex;
+    flex-direction: column;
+    padding: 1em 5em 10px 5em;
+    background: var(--back-padd);
+    border-radius: 20px;
+    position: absolute;
+    top: 35px;
+}
+
+div.form{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    
+}
+
+span{
+    font-size: 27px;
+    color: var(--btm-color);
+    font-weight: 400;
+    font-family: "Poppins";
+    margin-top: 5px;
+}
+
+input{
+    margin-top: 15px;
+    border: 2px solid var(--border-color);
+    padding: 8px;
+    width: 95%;
+    border-radius: 8px;
+    outline: 0;
+}
+
+.button{
+    position: absolute;
+    left: 37%;
+    top: 88%;
+    cursor: pointer;
+    background: var(--btm-color);
+    padding: 6px 15px 6px 15px;
+    color: var(--sub-color);
+    width: 25%;
+    border: 2px solid #9D6AC5;
+}
+
+.button:hover{
+    font-size: 15px;
+}
+
+.dark-mode:root{
+    --body-bg: #2D2B2B;
+    --p-color:#BD98DA;
+    --clip-path: #4C4652;
+    --input-color: #E5E5E5; 
+    --line-color:#BD98DA;  
+    --sub-color:#E5E5E5; 
+    --btm-color:#9D6AC5;
+    --border-color:#E5E5E5;
+    --back-padd:#4C4652;
+    --label-color:#E5E5E5;
+}
+
+@media only screen and (min-width: 358px) and (max-width: 1200px){
+    
+    .alternative img{
+        display: none;
+        visibility: hidden;
+    }   
+}
+
+@media only screen and (min-width: 358px) and (max-width: 1200px){
+    
+    .alternative .clip{
+      display: none;
+    visibility: hidden;
+   }    
+}
+
+@media only screen and (min-width: 358px) and (max-width: 1200px){
+    section span{
+        font-size: 30px;
+        position: absolute;
+        top: 20px;
+        padding: 1rem;
+    }    
+}
+
+@media only screen and (min-width: 358px) and (max-width: 1200px){
+    section span::before{
+        position: absolute;
+        top: 54px;
+    }        
+}
+
+@media only screen and (min-width: 358px) and (max-width: 1200px){
+    main{
+        width: 100vw;
+        position: absolute;
+        left: 7%;
+    }            
+}
+
+@media only screen and (min-width: 358px) and (max-width: 1200px){
+    div.form{
+        padding: 1rem;
+    }              
+}
+
+@media only screen and (min-width: 358px) and (max-width: 1200px){
+    span{
+        font-size: 20px;
+        font-family:"Roboto";
+    }                  
+}
+
+
+@media only screen and (min-width: 358px) and (max-width: 1200px){
+    input{
+        width: 75%;
+    } 
+}
+
+@media only screen and (min-width: 358px) and (max-width: 1200px){
+    .button{
+        position: absolute;
+        left: 34%;
+    }    
+}
+
+@media only screen and (min-width: 358px) and (max-width: 1200px){
+    form.form2{
+        padding: 4em;
+        width: 80%;
+        background:0;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+    }
+}
+
+@media only screen and (min-width: 358px) and (max-width: 1200px){
+    span{ 
+        color: var(--line-color);
+    }
+}
+
+@media only screen and (min-width: 358px) and (max-width: 1200px){
+    .button{
+        position: absolute;
+        left: 31%;
+        top: 83%;
+    }
+}
